@@ -5,7 +5,7 @@ Home: http://www.ijg.org/
 
 Package license: Custom free software license
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: read/write jpeg COM, EXIF, IPTC medata
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpeg-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/jpeg-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpeg-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpeg-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpeg-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpeg-feedstock/branch/master)
