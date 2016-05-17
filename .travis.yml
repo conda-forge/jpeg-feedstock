@@ -28,7 +28,6 @@ install:
       conda update --yes conda
       conda install --yes conda-build=1.20.0 jinja2 anaconda-client
       conda config --add channels conda-forge
-      conda remove --yes --force conda-build
       pip install git+git://github.com/conda/conda-build.git@e8e83de1eadb5a6f479fd2a716662d4df931e1c4
 
 script:
