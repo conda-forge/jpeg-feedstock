@@ -66,6 +66,7 @@ install:
     - cmd: conda config --add channels conda-forge
     - cmd: conda info
     - cmd: conda install -n root --quiet --yes conda-build anaconda-client jinja2 setuptools
+    - cmd: pip install git+git://github.com/conda/conda-build.git@e8e83de1eadb5a6f479fd2a716662d4df931e1c4
     # Workaround for Python 3.4 and x64 bug in latest conda-build.
     # FIXME: Remove once there is a release that fixes the upstream issue
     # ( https://github.com/conda/conda-build/issues/895 ).

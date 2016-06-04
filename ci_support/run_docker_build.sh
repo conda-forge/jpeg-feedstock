@@ -41,6 +41,7 @@ conda clean --lock
 
 conda update --yes --all
 conda install --yes conda-build
+pip install git+git://github.com/conda/conda-build.git@e8e83de1eadb5a6f479fd2a716662d4df931e1c4
 conda info
 
 # Embarking on 1 case(s).
