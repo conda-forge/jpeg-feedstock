@@ -11,6 +11,18 @@ Summary: read/write jpeg COM, EXIF, IPTC medata
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpeg-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jpeg-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpeg-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpeg-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpeg-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpeg-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/version.svg)](https://anaconda.org/conda-forge/jpeg)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/downloads.svg)](https://anaconda.org/conda-forge/jpeg)
+
 Installing jpeg
 ===============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `jpeg` available on your platform 
 ```
 conda search jpeg --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpeg-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jpeg-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpeg-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpeg-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpeg-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpeg-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/version.svg)](https://anaconda.org/conda-forge/jpeg)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/downloads.svg)](https://anaconda.org/conda-forge/jpeg)
 
 
 Updating jpeg-feedstock
