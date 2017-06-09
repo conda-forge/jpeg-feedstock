@@ -35,7 +35,7 @@ test:
 
 about:
     home: http://www.ijg.org/
-    license: Custom free software license
+    license: IJG
     summary: read/write jpeg COM, EXIF, IPTC medata
     
 extra:    
