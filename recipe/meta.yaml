@@ -12,6 +12,7 @@ source:
         - CMakeLists.txt.patch  # [win]
 
 build:
+    skip: true  # [win and py35]
     number: 0
     features:
         - vc9   # [win and py27]
