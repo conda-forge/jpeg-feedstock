@@ -36,6 +36,7 @@ test:
 about:
     home: http://www.ijg.org/
     license: IJG
+    license_file: "{{ RECIPE_DIR }}/LICENSE.txt"
     summary: read/write jpeg COM, EXIF, IPTC medata
     
 extra:    
