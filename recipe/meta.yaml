@@ -13,7 +13,7 @@ source:
 
 build:
     skip: true  # [win and py35]
-    number: 0
+    number: 1
     features:
         - vc9   # [win and py27]
         - vc10  # [win and py34]
@@ -35,7 +35,8 @@ test:
 
 about:
     home: http://www.ijg.org/
-    license: Custom free software license
+    license: IJG
+    license_file: {{ RECIPE_DIR }}/LICENSE.txt
     summary: read/write jpeg COM, EXIF, IPTC medata
     
 extra:    
