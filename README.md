@@ -3,7 +3,7 @@ About jpeg
 
 Home: http://www.ijg.org/
 
-Package license: Custom free software license
+Package license: IJG
 
 Feedstock license: BSD 3-Clause
 
