@@ -11,21 +11,16 @@ source:
     - CMakeLists.txt.patch  # [win]
 
 build:
-  skip: true  # [win and py36]
-  number: 2
-  features:
-    - vc9   # [win and py27]
-    - vc14  # [win and (py35 or py36)]
+  number: 3
+  run_exports:
+    # compatible within major version numbers
+    # https://abi-laboratory.pro/tracker/timeline/libjpeg/
+    - {{ pin_subpackage('jpeg') }}
 
 requirements:
   build:
-    - python  # [win]
-    - cmake   # [win]
-    - vc 9   # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
-  run:
-    - vc 9   # [win and py27]
-    - vc 14  # [win and (py35 or py36)]
+    - cmake  # [win]
+    - {{ compiler('c') }}
 
 test:
   files:
@@ -44,3 +39,4 @@ extra:
     - ocefpaf
     - gillins
     - jakirkham
+    - msarahan
