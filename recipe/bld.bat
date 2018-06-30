@@ -1,3 +1,4 @@
+:: REM Configure step
 set PATH=%PREFIX%\cmake-bin\bin;%PATH%
 
 :: Configure step
