@@ -14,14 +14,16 @@ Summary: read/write jpeg COM, EXIF, IPTC medata
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jpeg-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jpeg-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jpeg-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jpeg-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jpeg-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jpeg-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/jpeg-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/jpeg-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/jpeg-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/jpeg-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/jpeg-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/jpeg-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/version.svg)](https://anaconda.org/conda-forge/jpeg)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/jpeg/badges/downloads.svg)](https://anaconda.org/conda-forge/jpeg)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jpeg-green.svg)](https://anaconda.org/conda-forge/jpeg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jpeg.svg)](https://anaconda.org/conda-forge/jpeg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jpeg.svg)](https://anaconda.org/conda-forge/jpeg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jpeg.svg)](https://anaconda.org/conda-forge/jpeg) |
 
 Installing jpeg
 ===============
