@@ -1,5 +1,7 @@
 #!/bin/bash
 
+autoreconf
+
 ./configure --prefix=$PREFIX \
             --build=${BUILD}\
             --host=${HOST} \
