@@ -1,6 +1,8 @@
 #!/bin/bash
 
-autoconf
+automake --add-missing
+
+autoreconf
 
 ./configure --prefix=$PREFIX \
             --build=${BUILD}\
