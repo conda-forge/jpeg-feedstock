@@ -1,5 +1,5 @@
---- jpeg-8d/config.sub	2011-12-22 08:48:45.000000000 -0500
-+++ jpeg-9c/config.sub	2017-10-15 10:04:53.000000000 -0400
+--- a/config.sub	2011-12-22 08:48:45.000000000 -0500
++++ b/config.sub	2017-10-15 10:04:53.000000000 -0400
 @@ -1,38 +1,31 @@
  #! /bin/sh
  # Configuration validation subroutine script.

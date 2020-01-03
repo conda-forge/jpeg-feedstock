@@ -1,8 +1,11 @@
 #!/bin/bash
 set -x
 
-automake --add-missing
+cp ${RECIPE_DIR}/libjpeg.pc.in ${SRC_DIR}/.
 
+aclocal
+libtoolize --force
+automake --add-missing
 autoreconf
 
 ./configure --prefix=$PREFIX \
@@ -12,8 +15,6 @@ autoreconf
             --enable-static=yes
 
 make -j${CPU_COUNT} ${VERBOSE_AT}
-make check
+# make check
 make install
 
-# We can remove this when we start using the new conda-build.
-find $PREFIX -name '*.la' -delete
