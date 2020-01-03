@@ -1,6 +1,6 @@
 #!/bin/bash
 
-autoreconf
+autoconf
 
 ./configure --prefix=$PREFIX \
             --build=${BUILD}\
