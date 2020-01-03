@@ -11,10 +11,10 @@ source:
     - CMakeLists.txt.patch  # [win]
     # Update the configuration using jpeg-9c configuration files
     # also adds a libjpeg.pc file
-    - patches/config_guess_8d_to_9c.patch
-    - patches/config_sub_8d_to_9c.patch
-    - patches/configure_ac_8d_to_9c.patch
-    - patches/libjpeg.pc.in.patch
+    - 8d_9c_patches/config_guess_8d_to_9c.patch
+    - 8d_9c_patches/config_sub_8d_to_9c.patch
+    - 8d_9c_patches/configure_ac_8d_to_9c.patch
+    - 8d_9c_patches/libjpeg.pc.in.patch
 
 build:
   number: 0
