@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 automake --add-missing
 
