@@ -1,0 +1,45 @@
+diff -u a/jconfig.cfg b/jconfig.cfg
+--- a/jconfig.cfg	2020-01-03 11:07:34.590206866 -0500
++++ b/jconfig.cfg	2020-01-03 11:10:33.926914905 -0500
+@@ -113,3 +113,41 @@
+ 
+ /* Define 'void' as 'char' for archaic compilers that don't understand it. */
+ #undef void
++
++
++#ifdef JPEG_CJPEG_DJPEG
++
++/* These defines indicate which image (non-JPEG) file formats are allowed. */
++
++#define BMP_SUPPORTED		/* BMP image file format */
++#define GIF_SUPPORTED		/* GIF image file format */
++#define PPM_SUPPORTED		/* PBMPLUS PPM/PGM image file format */
++#undef RLE_SUPPORTED		/* Utah RLE image file format */
++#define TARGA_SUPPORTED		/* Targa image file format */
++
++/* Define this if you want to name both input and output files on the command
++ * line, rather than using stdout and optionally stdin.  You MUST do this if
++ * your system can't cope with binary I/O to stdin/stdout.  See comments at
++ * head of cjpeg.c or djpeg.c.
++ */
++#undef TWO_FILE_COMMANDLINE
++
++/* Define this if your system needs explicit cleanup of temporary files.
++ * This is crucial under MS-DOS, where the temporary "files" may be areas
++ * of extended memory; on most other systems it's not as important.
++ */
++#undef NEED_SIGNAL_CATCHER
++
++/* By default, we open image files with fopen(...,"rb") or fopen(...,"wb").
++ * This is necessary on systems that distinguish text files from binary files,
++ * and is harmless on most systems that don't.  If you have one of the rare
++ * systems that complains about the "b" spec, define this symbol.
++ */
++#undef DONT_USE_B_MODE
++
++/* Define this if you want percent-done progress reports from cjpeg/djpeg.
++ */
++#undef PROGRESS_REPORT
++
++
++#endif /* JPEG_CJPEG_DJPEG */
