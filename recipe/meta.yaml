@@ -29,6 +29,7 @@ requirements:
     - {{ compiler('c') }}
     - make
     - autoconf  # [unix]
+    - automake  # [unix]
 
 test:
   files:
