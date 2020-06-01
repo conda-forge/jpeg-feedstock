@@ -21,4 +21,5 @@ patch jconfig.cfg ${RECIPE_DIR}/8d_define_cjpeg_djpeg.patch
 make -j${CPU_COUNT} ${VERBOSE_AT}
 make check
 make install
+otool -L $PREFIX/lib/libjpeg.dylib
 
