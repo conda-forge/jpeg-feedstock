@@ -10,7 +10,6 @@ Feedstock license: BSD 3-Clause
 Summary: read/write jpeg COM, EXIF, IPTC medata
 
 
-
 Current build status
 ====================
 
