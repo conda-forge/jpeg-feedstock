@@ -1,3 +1,5 @@
+# WARNING: Do not ever ship a version without a trailing letter (e.g. do not ship version "9", "10", etc.)
+# WARNING: This will break the package pinnings.
 {% set version = "9d" %}
 {% set curr_major_version = version[:-1] %}
 
