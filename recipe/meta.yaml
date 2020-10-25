@@ -1,5 +1,5 @@
 {% set version = "9d" %}
-{% set next_major_version = version[:-1]|int 1 %}
+{% set next_major_version = version[:-1]|int + 1 %}
 
 package:
   name: jpeg
