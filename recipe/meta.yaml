@@ -1,6 +1,5 @@
 {% set version = "9d" %}
 {% set curr_major_version = version[:-1] %}
-{% set next_major_version = version[:-1]|int + 1 %}
 
 package:
   name: jpeg
@@ -18,7 +17,9 @@ build:
     # compatible within major version numbers
     # https://abi-laboratory.pro/tracker/timeline/libjpeg/
     # note that due to the versions 9, 9a, 9b, 9c etc we cannot use pin_compatible
-    - jpeg >={{ version }},<{{ next_major_version }}a0,!={{ curr_major_version }}
+    # thus we never ship version 9 and use a pin that is (for say version 9d)
+    #   >=9d,<9
+    - jpeg >={{ version }},<{{ curr_major_version }}
 
 requirements:
   build:
