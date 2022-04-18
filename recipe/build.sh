@@ -1,4 +1,6 @@
 #!/bin/bash
+# Get an updated config.sub and config.guess
+cp $BUILD_PREFIX/share/gnuconfig/config.* .
 set -x
 
 cp ${RECIPE_DIR}/libjpeg.pc.in ${SRC_DIR}/.
@@ -19,6 +21,8 @@ patch jconfig.cfg ${RECIPE_DIR}/8d_define_cjpeg_djpeg.patch
             --enable-static=yes
 
 make -j${CPU_COUNT} ${VERBOSE_AT}
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
 make check
+fi
 make install
 

@@ -25,6 +25,7 @@ build:
 requirements:
   build:
     - cmake  # [win]
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - make
     - autoconf  # [unix]
