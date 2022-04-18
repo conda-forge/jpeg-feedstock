@@ -6,7 +6,7 @@ package:
 
 source:
   url: http://www.ijg.org/files/jpegsrc.v{{ version }}.tar.gz
-  sha256:  00029b1473f0f0ea72fbca3230e8cb25797fbb27e58ae2e46bb8bf5a806fe0b3
+  sha256:  fdc4d4c11338ad028a7d23fb53f5bb9354671392a67fb1b52e0c32a7121891f8
   patches:
     - CMakeLists.txt.patch  # [win]
     # Update the configuration using jpeg-9c configuration files
@@ -16,7 +16,7 @@ source:
     - 8d_9c_patches/configure_ac_8d_to_9c.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # compatible within major version numbers
     # https://abi-laboratory.pro/tracker/timeline/libjpeg/
