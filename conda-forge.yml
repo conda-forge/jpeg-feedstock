@@ -8,3 +8,5 @@ github:
 bot:
   abi_migration_branches:
   - v8
+conda_build:
+  pkg_format: '2'
