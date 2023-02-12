@@ -11,7 +11,7 @@ source:
     - CMakeLists.txt.patch  # [win]
 
 build:
-  number: 2
+  number: 3
   run_exports:
     # compatible within major version numbers
     # https://abi-laboratory.pro/tracker/timeline/libjpeg/
@@ -23,6 +23,8 @@ requirements:
     - libtool  # [unix]
     - {{ compiler('c') }}
     - make
+  run_constrained:
+    - libjpeg-turbo <0.0.0a
 
 test:
   files:
