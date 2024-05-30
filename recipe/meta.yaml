@@ -1,4 +1,4 @@
-{% set version = "9e" %}
+{% set version = "9g" %}
 
 package:
   name: jpeg
@@ -6,12 +6,12 @@ package:
 
 source:
   url: http://www.ijg.org/files/jpegsrc.v{{ version }}.tar.gz
-  sha256: 4077d6a6a75aeb01884f708919d25934c93305e49f7e3f36db9129320e6f4f3d
+  sha256: 6e004d72f9108014caccf434095514c139478c72b6b1873a3e3807ea5bec5c59
   patches:
     - CMakeLists.txt.patch  # [win]
 
 build:
-  number: 3
+  number: 0
   run_exports:
     # compatible within major version numbers
     # https://abi-laboratory.pro/tracker/timeline/libjpeg/
@@ -22,6 +22,7 @@ requirements:
     - cmake  # [win]
     - libtool  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
   run_constrained:
     - libjpeg-turbo <0.0.0a
